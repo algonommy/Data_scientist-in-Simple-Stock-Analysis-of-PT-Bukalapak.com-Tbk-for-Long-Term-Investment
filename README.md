@@ -27,3 +27,9 @@ The purpose of this analysis is to look at Bukalapak's stock in providing a retu
 
 ### B. Data Collection
 There are many ways to aggregate historical stock prices with their fundamentals. For this particular analysis, [Pandas](https://pandas.pydata.org/) provides a library for retrieving forum data from multiple sources. The library is called `Pandas Data Reader`. The library is a wrapper for retrieving data like historical stock prices, country GDP, World economic data, etc. This analysis in particular. [Yahoo Finance](https://finance.yahoo.com/quote/BUKA.JK?p=BUKA.JK&.tsrc=fin-srch) data is used because it is free and has a very large stock database. By avoiding manual, tedious work like downloading CSV files, analysis can be used for as much stock as possible. By doing `import pandas_datareader.data as web`
+
+Since the final analysis will involve a return on investment, the Closing price is Adjusted. Used This option was taken to simplify the analysis. also, based on the adjusted closing price period, the price should best reflect the BUKA price on a given day.
+#### Plotting Price BUKA Stock
+![download (3)](https://user-images.githubusercontent.com/91531966/141608697-84a9b465-ba67-4a7b-a0f0-55e3722766b4.png)
+
+The plot above shows the price of **BUKA** from the beginning of the IPO until November 2021. As expected, the data has shown a clear trend, namely a down trend. For example, let's take the return on investment if someone returns the money at the start of the IPO. Since plots of the same style will be widely used in this analysis, functions can be written to simplify future use.
