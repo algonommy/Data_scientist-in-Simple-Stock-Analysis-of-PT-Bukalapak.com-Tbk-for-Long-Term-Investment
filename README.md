@@ -36,4 +36,30 @@ The plot above shows the price of **BUKA** from the beginning of the IPO until N
 
 #### Result Return On Investment
 <img width="499" alt="Screenshot 2021-11-13 134113" src="https://user-images.githubusercontent.com/91531966/141609028-341c6055-4da0-413f-a447-64cffd5f4c5f.png">
-By using logarithmic returns, the result is that the return on investment in BUKA.JK shares from the beginning of the IPO until November 2021 is -35%. so if we invest from the beginning of the IPO of Rp 10 million, our money now will be Rp 6.5 million.
+By using logarithmic returns using the `NumPy` library, the result is that the return on investment in BUKA.JK shares from the beginning of the IPO until November 2021 is -35.94%. so if we invest from the beginning of the IPO of Rp 10 million, our money now will be Rp 6.5 million. Of course we have suffered losses, but our analysis does not end here, we will conduct a deeper analysis to see how attractive BUKA shares are in the investor's portfolio.
+
+### C. Data Analysis
+With a quick glance at the data, there is some work to be done before it can be used. One of them is looking for a return on investment from every day. This is a necessary step. In Investing, the stock price on a given day is not very relevant. Price difference 2 different days.
+
+#### Visualization ROI of BUKA Stock everyday 
+![download](https://user-images.githubusercontent.com/91531966/141609334-cc8dac48-85e7-4164-9a91-c832914e0631.png)
+
+By looking at the graph above, although it's a bit difficult to tell the difference, there are some clues that can be taken. For example, the worst ROI occurred around August and October 2021 where it was less than -6%. However, the best day comes also around November 2021 where ROI exceeds 8% in one day. Furthermore, at the outset, it is stated that the analysis will be used to invest in long-term intervals. This means the daily ROI will be less relevant because the interval is too short. Resampling is a good way to convert data from daily ROI to monthly ROI.
+
+#### Visualization ROI of BUKA Stock every month
+![download (1)](https://user-images.githubusercontent.com/91531966/141609491-b13cecc6-569a-42fe-820f-ed0bd076d4d8.png)
+
+#### Describe
+<img width="260" alt="Screenshot 2021-11-13 140503" src="https://user-images.githubusercontent.com/91531966/141609525-588a3da8-2268-4342-8dd0-069e813ba7b3.png">
+
+From the visualization and summary above, the data now looks a bit easier to read. For example, although ROIs fluctuate, they are not far from a certain point. This is called oscillation. The mean of the oscillations is the average of the data, the form of this example is -8.98 This also means, on average, one will earn an estimated ROI of -8.98% every month over a 4 month period. Of course this is not desired by investors, because it will result in losses. Then, their oscillations also have bounded upper and lower bounds, and it is called standard deviation or std. with a slight modification to the code, everything can be visualized as follows.
+
+#### Visualization Volatility ROI of BUKA Stock every month
+![download (2)](https://user-images.githubusercontent.com/91531966/141609709-7e94832e-531e-45b7-8b1a-6efad41b7f6a.png)
+
+In stock prices, std is called volatility. This is an important metric because when large amounts of money are involved, less volatile stocks are more profitable. Less volatile stocks mean they are easier to predict because they are also less risky. Moreover, If the data is normally distributed, one is normally distributed. One that fits is the `Q-Q plot`.
+
+Using the statsmodels library, the Q-Q plot should show if the dataset is normally distributed. If most of the points fall on the red line, then the distribution is normally distributed. Unfortunately, not this data. SO in short, collecting stock data over a 4 month period can yield a rough estimate for generating expectations about what ROI and risk are used for. Mean and Standard Deviation.
+
+### Conclusion
+We can conclude that during the past 4 months, BUKA.JK shares have been less attractive in terms of ROI. However, this BUKA.JK stock is attractive to be included in an investor's portfolio because the price is already relatively cheap. In terms of long-term investment, this stock is attractive to buy considering that Bukalapak is a startup company with a high valuation. It is possible that in the long term there will be an increase. However, to determine whether the risk and ROI is high or low, a comparison with other stocks is needed.
