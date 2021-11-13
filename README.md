@@ -1,4 +1,4 @@
-# Data scientist in Simple Stock Analysis of PT Bukalapak.com Tbk for Long Term Investment
+# Data Scientist in Simple Stock Analysis of PT Bukalapak.com Tbk for Long Term Investment
 
 ## Brief explanation of PT Bukalapak.com Tbk
 Bukalapak was founded on January 10, 2010 by Achmad Zaky, Nugroho Herucahyono, and Fajrin Rasyid in a boarding house while studying at the Bandung Institute of Technology.
