@@ -59,7 +59,7 @@ From the visualization and summary above, the data now looks a bit easier to rea
 
 In stock prices, std is called volatility. This is an important metric because when large amounts of money are involved, less volatile stocks are more profitable. Less volatile stocks mean they are easier to predict because they are also less risky. Moreover, If the data is normally distributed, one is normally distributed. One that fits is the `Q-Q plot`.
 
-#### Visualize Q-Q Plot
+#### Visualization Q-Q Plot
 ![download (4)](https://user-images.githubusercontent.com/91531966/141610703-50f08683-91d0-4d31-9b54-e9a96157858b.png)
 
 Using the statsmodels library, the Q-Q plot should show if the dataset is normally distributed. If most of the points fall on the red line, then the distribution is normally distributed. Unfortunately, not this data. So in short, collecting stock data over a 4 month period can yield a rough estimate for generating expectations about what ROI and risk are used for. Mean and Standard Deviation.
