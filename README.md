@@ -33,3 +33,7 @@ Since the final analysis will involve a return on investment, the Closing price 
 ![download (3)](https://user-images.githubusercontent.com/91531966/141608697-84a9b465-ba67-4a7b-a0f0-55e3722766b4.png)
 
 The plot above shows the price of **BUKA** from the beginning of the IPO until November 2021. As expected, the data has shown a clear trend, namely a down trend. For example, let's take the return on investment if someone returns the money at the start of the IPO. Since plots of the same style will be widely used in this analysis, functions can be written to simplify future use.
+
+#### Result Return On Investment
+<img width="499" alt="Screenshot 2021-11-13 134113" src="https://user-images.githubusercontent.com/91531966/141609028-341c6055-4da0-413f-a447-64cffd5f4c5f.png">
+By using logarithmic returns, the result is that the return on investment in BUKA.JK shares from the beginning of the IPO until November 2021 is -35%. so if we invest from the beginning of the IPO of Rp 10 million, our money now will be Rp 6.5 million.
