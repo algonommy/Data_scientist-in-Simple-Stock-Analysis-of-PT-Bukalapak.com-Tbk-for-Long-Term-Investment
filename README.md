@@ -1,3 +1,5 @@
+[![Bukalapak](https://assets.bukalapak.com/daisy/compro/images/logo-primary.svg)](https://about.bukalapak.com/id/)
+
 # Data Scientist in Simple Stock Analysis of PT Bukalapak.com Tbk for Long Term Investment
 
 ## Brief explanation of PT Bukalapak.com Tbk
